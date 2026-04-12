@@ -333,7 +333,7 @@ jobs:
 
        - name: Build youtube-native-share
         run: |
-          cd youtube-native-share
+         cd youtube-native-share
           make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless ARCHS=arm64
           mv packages/*.deb ${{ github.workspace }}/youtube-native-share.deb 
           
